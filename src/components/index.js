@@ -2,3 +2,8 @@ export { default as Navbar } from "./Navbar/Navbar";
 export { default as Products } from "./Products/Products";
 export { default as Cart } from "./Cart/Cart";
 export { default as Checkout } from "./CheckoutForm/Checkout/Checkout";
+export { default as Hero } from "./Home/Hero/Hero";
+export { default as About } from "./About/About";
+export { default as Newsletter } from "./Home/Newsletter/Newsletter";
+export { default as Footer } from "./Footer/Footer";
+export { default as FooterInfo } from "./Footer/FooterInfo";

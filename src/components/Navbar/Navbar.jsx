@@ -35,10 +35,28 @@ const Navbar = ({ totalItems }) => {
               height="25px"
               className={classes.image}
             />
-            My Store
+            Danniel's Store
           </Typography>
           <div className={classes.grow} />
-          {location.pathname === "/" && (
+          <Typography
+            component={Link}
+            to="/about"
+            variant="h6"
+            color="inherit"
+            className={classes.navbarItem}
+          >
+            About
+          </Typography>
+          <Typography
+            component={Link}
+            to="/products"
+            variant="h6"
+            color="inherit"
+            className={classes.navbarItem}
+          >
+            Products
+          </Typography>
+          {location.pathname !== "/cart" && (
             <div className={classes.button}>
               <IconButton
                 component={Link}

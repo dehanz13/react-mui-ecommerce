@@ -5,11 +5,12 @@ const drawerWidth = 0;
 export default makeStyles((theme) => ({
   appBar: {
     boxShadow: "none",
-    borderBottom: "1px solid rgba(0, 0, 0, 0.12)",
+    // borderBottom: "1px solid rgba(0, 0, 0, 0.12)",
     [theme.breakpoints.up("sm")]: {
       width: `calc(100% - ${drawerWidth}px)`,
       marginLeft: drawerWidth,
     },
+    background: "none",
   },
   title: {
     flexGrow: 1,
@@ -64,5 +65,18 @@ export default makeStyles((theme) => ({
     [theme.breakpoints.up("md")]: {
       width: "20ch",
     },
+  },
+  navbarContainer: {
+    flexGrow: 1,
+    alignItems: "center",
+    display: "flex",
+    textDecoration: "none",
+  },
+  navbarItem: {
+    // flexGrow: 1,
+    alignItems: "center",
+    display: "flex",
+    textDecoration: "none",
+    marginRight: theme.spacing(2),
   },
 }));
