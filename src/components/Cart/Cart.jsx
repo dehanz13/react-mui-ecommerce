@@ -13,7 +13,7 @@ const Cart = ({
 }) => {
   // const isEmpty = cart.line_items.length === 0;
   // same as:
-  // const isEmpty = !cart.line_items.length;
+  // const isEmpty = !cart.line_items?.length;
   const classes = useStyles();
 
   const EmptyCart = () => (
