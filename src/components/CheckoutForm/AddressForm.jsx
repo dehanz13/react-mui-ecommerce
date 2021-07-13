@@ -99,17 +99,17 @@ const AddressForm = ({ checkoutToken, next }) => {
               ...data,
               shippingCountry,
               shippingSubdivision,
-              setShippingOption,
+              shippingOption,
             })
           )}
         >
           <Grid container spacing={3}>
-            <FormInput name="firstName" label="First Name" />
-            <FormInput name="lastName" label="Last Name" />
-            <FormInput name="address1" label="Address" />
-            <FormInput name="email" label="Email" />
-            <FormInput name="City" label="City" />
-            <FormInput name="ZIP" label="Zipcode / Postal Code" />
+            <FormInput required name="firstName" label="First Name" />
+            <FormInput required name="lastName" label="Last Name" />
+            <FormInput required name="address1" label="Address" />
+            <FormInput required name="email" label="Email" />
+            <FormInput required name="city" label="City" />
+            <FormInput required name="zip" label="Zipcode / Postal Code" />
             <Grid item xs={12} sm={6}>
               <InputLabel>Shipping Country</InputLabel>
               <Select
@@ -139,7 +139,7 @@ const AddressForm = ({ checkoutToken, next }) => {
               </Select>
             </Grid>
             <Grid item xs={12} sm={6}>
-              <InputLabel>Shipping Subdivision</InputLabel>
+              <InputLabel>Shipping Options</InputLabel>
               <Select
                 value={shippingOption}
                 fullWidth
