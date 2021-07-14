@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { commerce } from "./lib/commerce";
 import {
   Products,
+  ProductPage,
   Navbar,
   Cart,
   Checkout,
@@ -13,6 +14,8 @@ import {
   Footer,
   FooterInfo,
 } from "./components";
+
+import { CssBaseline } from "@material-ui/core";
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -93,6 +96,7 @@ const App = () => {
   return (
     <Router>
       <div>
+        <CssBaseline />
         <Navbar totalItems={cart.total_items} />
         <Switch>
           <Route exact path="/">
@@ -120,7 +124,7 @@ const App = () => {
             />
           </Route>
           <Route exact path="/products">
-            <Products products={products} onAddToCart={handleAddToCart} />
+            <ProductPage products={products} onAddToCart={handleAddToCart} />
           </Route>
         </Switch>
         <FooterInfo />

@@ -11,6 +11,17 @@ export default makeStyles((theme) => ({
       marginLeft: drawerWidth,
     },
     background: "none",
+    // height:
+  },
+  toolbarMargin: {
+    ...theme.mixins.toolbar,
+    marginBottom: `1em`,
+    [theme.breakpoints.down("md")]: {
+      marginBottom: "2em",
+    },
+    [theme.breakpoints.down("xs")]: {
+      marginBottom: "2em",
+    },
   },
   title: {
     flexGrow: 1,

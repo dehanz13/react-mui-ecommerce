@@ -48,6 +48,8 @@ export default makeStyles((theme) => ({
     justifySelf: "center",
     display: "flex",
     textDecoration: "none",
+    marginTop: theme.spacing(8),
+    marginBottom: theme.spacing(8),
   },
   footerName: {
     color: "#fff",
